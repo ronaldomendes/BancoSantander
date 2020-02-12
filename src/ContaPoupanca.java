@@ -59,7 +59,7 @@ public class ContaPoupanca implements Conta {
     }
 
     public void recolherJuros() {
-        this.setSaldo(getSaldo() - getJuros());
+        this.setSaldo(getSaldo() * (1 + getJuros()));
         System.out.println(String.format("Seu saldo atual é: R$ %.2f", this.getSaldo()));
     }
 }

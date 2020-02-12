@@ -3,7 +3,7 @@ public class Main {
         Cliente cliente01 = new Cliente(1, "Godofredo", "Souza", "423420868", "32254248643");
         Cliente cliente02 = new Cliente(1, "Creuza", "Silva", "423909868", "32254294129");
 
-        ContaPoupanca cp01 = new ContaPoupanca(cliente01, 500, 1);
+        ContaPoupanca cp01 = new ContaPoupanca(cliente01, 500, 0.05); // valor juros em decimal
         ContaCorrente cc01 = new ContaCorrente(cliente02, 50, 1, 500);
 
         System.out.println("--- Conta Poupança ---");
