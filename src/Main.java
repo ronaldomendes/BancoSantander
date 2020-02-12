@@ -18,7 +18,7 @@ public class Main {
         cc01.depositarCheque(10, "Banco ABC", "12/02/2020");
         cc01.sacar(10);
         cc01.sacar(100);
-        cc01.sacar(400);
+        cc01.sacar(399);
         cc01.sacar(400);
     }
 }

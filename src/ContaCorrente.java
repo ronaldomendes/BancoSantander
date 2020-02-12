@@ -41,7 +41,7 @@ public class ContaCorrente extends ContaPoupanca implements Conta {
     public void sacar(double dinheiro) {
         if (this.getSaldo() > 0) {
             super.sacar(dinheiro);
-        } else if (getSaldo() <= 0 && getChequeEspecial() > 0) {
+        } else if (getSaldo() <= 0 && getChequeEspecial() >= dinheiro) {
             this.setSaldo(getSaldo() - dinheiro);
             this.setChequeEspecial(getChequeEspecial() - dinheiro);
             System.out.println(String.format(
